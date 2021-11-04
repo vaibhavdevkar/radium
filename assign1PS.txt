@@ -1,0 +1,143 @@
+
+- Create a folder called ‘assignment’
+
+- Inside ‘assignment’ create 2 folders ‘source’ and ‘destination’
+
+- Inside ‘source’ create a text file using a command ( not manually)
+
+- Add content in the text file
+
+- copy the contents of ‘source’ folder in ‘destination’ using cp command
+
+solution 
+
+
+
+Vaibhav@LAPTOP-83NK1N0R MINGW64 ~
+$ cd Desktop
+
+Vaibhav@LAPTOP-83NK1N0R MINGW64 ~/Desktop
+$ mkdir assignment
+
+Vaibhav@LAPTOP-83NK1N0R MINGW64 ~/Desktop
+$ cd assignment
+
+Vaibhav@LAPTOP-83NK1N0R MINGW64 ~/Desktop/assignment
+$ mkdir source
+
+Vaibhav@LAPTOP-83NK1N0R MINGW64 ~/Desktop/assignment
+$ mkdir destination
+
+Vaibhav@LAPTOP-83NK1N0R MINGW64 ~/Desktop/assignment
+$ cd source
+
+Vaibhav@LAPTOP-83NK1N0R MINGW64 ~/Desktop/assignment/source
+$ cat > file.txt
+assigment commants
+
+Vaibhav@LAPTOP-83NK1N0R MINGW64 ~/Desktop/assignment/source
+$ ls
+file.txt
+
+Vaibhav@LAPTOP-83NK1N0R MINGW64 ~/Desktop/assignment/source
+$ cd ..
+
+Vaibhav@LAPTOP-83NK1N0R MINGW64 ~/Desktop/assignment
+$ cd destination
+
+Vaibhav@LAPTOP-83NK1N0R MINGW64 ~/Desktop/assignment/destination
+$ cd ..
+
+Vaibhav@LAPTOP-83NK1N0R MINGW64 ~/Desktop/assignment
+$ cd source
+
+Vaibhav@LAPTOP-83NK1N0R MINGW64 ~/Desktop/assignment/source
+$ cp file.txt  ~/Desktop/assignment/destination
+
+Vaibhav@LAPTOP-83NK1N0R MINGW64 ~/Desktop/assignment/source
+$ cd ..
+
+Vaibhav@LAPTOP-83NK1N0R MINGW64 ~/Desktop/assignment
+$ cd destination
+
+Vaibhav@LAPTOP-83NK1N0R MINGW64 ~/Desktop/assignment/destination
+$ ls
+file.txt
+
+
+
+
+
+Problem 2:
+
+- Remove the above file from ‘destination’ folder
+
+- Move the file from ‘source’ to ‘destination’
+
+solution => 
+
+
+Vaibhav@LAPTOP-83NK1N0R MINGW64 ~/Desktop/assignment/destination
+$ rm file.txt
+
+Vaibhav@LAPTOP-83NK1N0R MINGW64 ~/Desktop/assignment/destination
+$ cd ..
+
+Vaibhav@LAPTOP-83NK1N0R MINGW64 ~/Desktop/assignment
+$ cd source
+
+Vaibhav@LAPTOP-83NK1N0R MINGW64 ~/Desktop/assignment/source
+$ mv file.txt  ~/Desktop/assignment/destination
+
+Vaibhav@LAPTOP-83NK1N0R MINGW64 ~/Desktop/assignment/source
+$ ls
+
+Vaibhav@LAPTOP-83NK1N0R MINGW64 ~/Desktop/assignment/source
+$ cd ..
+
+Vaibhav@LAPTOP-83NK1N0R MINGW64 ~/Desktop/assignment
+$ cd destination
+
+Vaibhav@LAPTOP-83NK1N0R MINGW64 ~/Desktop/assignment/destination
+$ ls
+file.txt
+
+
+
+
+
+
+3)
+Problem 3:
+
+- Edit the above file in ‘destination’ folder and add a lot of lines of text with ‘functionup’ mentioned in a few lines
+
+- Use the grep command to find all the lines containing the key word ‘functionup’
+
+
+
+
+
+Vaibhav@LAPTOP-83NK1N0R MINGW64 ~/Desktop/assignment/destination
+$ cat file.txt
+assigment commants
+
+
+Vaibhav@LAPTOP-83NK1N0R MINGW64 ~/Desktop/assignment/destination
+$ vim file.txt
+
+Vaibhav@LAPTOP-83NK1N0R MINGW64 ~/Desktop/assignment/destination
+$ cat file.txt
+this is functionup team.
+thank you functionup .
+its vaibhav.
+
+
+Vaibhav@LAPTOP-83NK1N0R MINGW64 ~/Desktop/assignment/destination
+$ grep -i "functionup" file.txt
+this is functionup team.
+thank you functionup .
+
+Vaibhav@LAPTOP-83NK1N0R MINGW64 ~/Desktop/assignment/destination
+$
+
